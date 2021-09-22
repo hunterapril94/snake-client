@@ -1,6 +1,6 @@
 let connection;
+const stdin = require('./constants').stdin
 const setupInput = function (conn) {
-  const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
   stdin.resume();
